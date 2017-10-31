@@ -1,0 +1,46 @@
+Developing Data Products - Final Project
+Developing Data Products - Final Course Project
+========================================================
+author: Arpad Kovacs
+date: November 1, 2017
+autosize: true
+transition: rotate
+
+
+Project Background
+========================================================
+This presentation is the pitch for a Shiny RStudio application that was built for the [Developing Data Products Coursera course](https://www.coursera.org/learn/data-products) as the final project.
+
+The application was created in RStudio. It uses the mtcars data set that is part of R. The purpose of the application is to use an interactive way to demontrate a linear model fit between fuel consumption in miles per gallon and other available variables in this data set. The user can experiment by selecting different combinations of the predictors and examining how good the resulting linear fit is.
+
+
+Dataset
+========================================================
+
+The source of the <i>mtcars</i> dataset was the 1974 Motor Trend US magazine publication, and it contains MPG as well as 10 other parameters of 32 different cars of that model year.
+
+```{r}
+tail(mtcars[c(1,2,4,8,9,10)])
+```
+
+Shiny RStudio Application
+========================================================
+
+* The shiny application models the relationship between a car's MPG and one or more variables in the R <i>mtcars</i> dataset using linear regression.
+
+* The variables are user selectable by clicking
+
+* The application is reactive and will change the output accordingly:
+    + It will print out the linear model summary.
+    + It will plot the residuals and other parameters.
+
+* Shiny application can be found at the link below: (https://arpadthetall.shinyapps.io/W4_Final_Project/)
+
+* The Shiny application files are on GitHub at the link below:  (https://github.com/arpadthetall/DevelopingDataProducts_FinalProject/).
+
+
+The Shiny Application HTML
+========================================================
+<div align="center">
+<img src="myimage.png" width=800 height=600>
+</div>
